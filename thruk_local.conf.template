@@ -1,0 +1,13 @@
+# start page
+start_page = /thruk/cgi-bin/tac.cgi
+
+<Component Thruk::Backend>
+    <peer>
+        name    = nagios
+        type    = livestatus
+        <options>
+            peer          = 127.0.0.1:6557
+        </options>
+    </peer>
+
+</Component>
